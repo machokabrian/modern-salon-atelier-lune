@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atelier Lune — House of Hair, Barber, Nails & Spa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Atelier <b>Lune</b></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#house">The House</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon" id="themeBtn" aria-label="Theme">◐</button>
+      <a class="btn small" href="#book">Book</a>
+      <button class="icon" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div class="drawer" id="drawer"><a href="#services">Services</a><a href="#house">The House</a><a href="#team">Team</a><a href="#visit">Visit</a><a href="#book" class="btn">Book now</a></div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="pill">HAIR • BARBER • NAILS • SPA • NAKURU</div>
+        <h1>Hair. Barber.<br><span>Nails. Spa.</span><br>One House.</h1>
+        <p>Four studios under one roof. Precision cuts, fades, gel & art, massage and skin. No noise, no rush — just work that lasts.</p>
+        <div class="cta">
+          <a class="btn" href="#book">Book appointment</a>
+          <a class="btn ghost" href="#services">See menu & prices</a>
+        </div>
+        <div class="status" id="status"><span class="dot"></span><span id="statusText">Checking hours…</span></div>
+        <div class="stats">
+          <div><b>4</b><span>Studios</span></div><div><b>12</b><span>Specialists</span></div><div><b>4.9</b><span>Google rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="card-stack">
+          <div class="mini m1"><i>✂</i><span>Hair</span></div>
+          <div class="mini m2"><i>◍</i><span>Barber</span></div>
+          <div class="mini m3"><i>◐</i><span>Nails</span></div>
+          <div class="mini m4"><i>≋</i><span>Spa</span></div>
+        </div>
+        <div class="mirror">
+          <img src="https://images.unsplash.com/photo-1634480258143-ffb5e6df0029?auto=format&fit=crop&w=1000&q=75" alt="A stylist cutting a client’s hair in front of a mirror" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="house">
+    <div class="wrap house-grid">
+      <div class="house-card" data-cat="hair">
+        <img src="https://images.unsplash.com/photo-1634480258143-ffb5e6df0029?auto=format&fit=crop&w=700&q=70" alt="Stylist cutting hair at a mirror" loading="lazy">
+        <h3>Hair Studio</h3><p>Cuts, color, braids, treatments. Lived-in tones that grow out beautifully.</p><span>From KSh 2,500</span>
+      </div>
+      <div class="house-card" data-cat="barber">
+        <img src="https://images.unsplash.com/photo-1634480257305-7f4ca3582e6a?auto=format&fit=crop&w=700&q=70" alt="Barber giving a client a haircut" loading="lazy">
+        <h3>Barber Atelier</h3><p>Fades, scissor cuts, beard sculpt, hot towel. Quiet chairs, clean lines.</p><span>From KSh 1,500</span>
+      </div>
+      <div class="house-card" data-cat="nails">
+        <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?auto=format&fit=crop&w=700&q=70" alt="Client having her nails painted" loading="lazy">
+        <h3>Nail Lab</h3><p>Gel, BIAB, extensions, art. Dust-free, long-lasting, gentle on nails.</p><span>From KSh 1,800</span>
+      </div>
+      <div class="house-card" data-cat="spa">
+        <img src="https://images.unsplash.com/photo-1712725213051-8d7d6a52edaf?auto=format&fit=crop&w=700&q=70" alt="Client relaxing during a massage" loading="lazy">
+        <h3>Spa & Skin</h3><p>Massage, facials, waxing, body rituals. Calm room, warm light.</p><span>From KSh 3,000</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services & Prices</h2>
+      <p class="lead">KSh prices are starting prices. Length, thickness and products change final price — confirmed before we start.</p>
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-cat="all">All House</button>
+        <button class="tab" data-cat="hair">Hair</button>
+        <button class="tab" data-cat="barber">Barber</button>
+        <button class="tab" data-cat="nails">Nails</button>
+        <button class="tab" data-cat="spa">Spa</button>
+      </div>
+      <div class="list" id="serviceList"></div>
+    </div>
+  </section>
+
+  <section id="team" style="background:var(--surface)">
+    <div class="wrap">
+      <h2>Your specialists</h2>
+      <p class="lead">Book with the person whose work you love, or let us match you.</p>
+      <div class="team">
+        <div class="person"><div class="avatar">M</div><h3>Maya</h3><p>Hair — Cuts & curls. Founder.</p></div>
+        <div class="person"><div class="avatar">J</div><h3>Jonas</h3><p>Hair — Color correction.</p></div>
+        <div class="person"><div class="avatar">L</div><h3>Leo</h3><p>Barber — Fades & beard.</p></div>
+        <div class="person"><div class="avatar">A</div><h3>Amara</h3><p>Braids & protective.</p></div>
+        <div class="person"><div class="avatar">N</div><h3>Nia</h3><p>Nails — Gel, BIAB, art.</p></div>
+        <div class="person"><div class="avatar">S</div><h3>Sana</h3><p>Spa — Massage & skin.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="wrap">
+      <h2>Book your visit</h2>
+      <p class="lead">One request for any studio. We confirm by WhatsApp within 1 hour.</p>
+      <div class="card book-card">
+        <form id="form" novalidate onsubmit="return false">
+          <div class="two">
+            <div class="field"><label for="service">Service</label><select id="service"></select></div>
+            <div class="field"><label for="stylist">Specialist</label><select id="stylist"><option>Any specialist</option><option>Maya</option><option>Jonas</option><option>Leo</option><option>Amara</option><option>Nia</option><option>Sana</option></select></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
+            <div class="field"><label for="name">Your name</label><input id="name" autocomplete="name" placeholder="Your name"></div>
+          </div>
+          <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" autocomplete="tel" placeholder="07… or +254…"></div>
+          <p class="err" id="err" role="alert"></p>
+          <button class="btn" id="submit" type="button">Request on WhatsApp</button>
+        </form>
+        <div class="ok" id="ok"><h3>Request ready</h3><p id="okText"></p><p><button class="link" id="again">Make another</button></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="background:var(--surface)">
+    <div class="wrap visit">
+      <div>
+        <h2>Visit us</h2>
+        <p class="lead">Kenyatta Avenue, Nakuru Town<br>Open 9am — 8pm daily<br>Call or WhatsApp: <a href="tel:+254110922252">0110 922 252</a></p>
+        <p style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <button class="btn" id="dirBtn">Get directions</button>
+          <a class="btn ghost" href="https://wa.me/254110922252" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </p>
+        <p class="err" id="dirMsg" style="color:var(--muted)"></p>
+      </div>
+      <div><h3 style="margin-bottom:.8rem">Opening hours</h3><table id="hours"></table></div>
+    </div>
+    <div class="wrap"><iframe class="map" title="Map" loading="lazy" src="https://www.google.com/maps?q=Nakuru+Town,+Kenya&z=15&output=embed"></iframe></div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Atelier Lune — House</span><span>Hair • Barber • Nails • Spa. Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span></div></footer>
+<script src="script.js"></script>
+</body>
+    </html>
+    

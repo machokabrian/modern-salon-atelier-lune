@@ -124,9 +124,12 @@
           </div>
           <div class="two">
             <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
-            <div class="field"><label for="name">Your name</label><input id="name" autocomplete="name" placeholder="Your name"></div>
+            <div class="field"><label for="time">Time</label><select id="time" disabled><option value="">Choose a date first</option></select></div>
           </div>
-          <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" autocomplete="tel" placeholder="07… or +254…"></div>
+          <div class="two">
+            <div class="field"><label for="name">Your name</label><input id="name" autocomplete="name" placeholder="Your name"></div>
+            <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" autocomplete="tel" placeholder="07… or +254…"></div>
+          </div>
           <p class="err" id="err" role="alert"></p>
           <button class="btn" id="submit" type="button">Request on WhatsApp</button>
         </form>
@@ -139,10 +142,10 @@
     <div class="wrap visit">
       <div>
         <h2>Visit us</h2>
-        <p class="lead">Kenyatta Avenue, Nakuru Town<br>Open 9am — 8pm daily<br>Call or WhatsApp: <a href="tel:+254110922252">0110 922 252</a></p>
+        <p class="lead"><span id="addr"></span><br>Call or WhatsApp: <a id="phoneLink" href="#"></a></p>
         <p style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
           <button class="btn" id="dirBtn">Get directions</button>
-          <a class="btn ghost" href="https://wa.me/254110922252" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn ghost" id="waBtn" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
         </p>
         <p class="err" id="dirMsg" style="color:var(--muted)"></p>
       </div>
@@ -155,5 +158,4 @@
 <footer><div class="wrap"><span>© 2026 Atelier Lune — House</span><span>Hair • Barber • Nails • Spa. Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span></div></footer>
 <script src="script.js"></script>
 </body>
-    </html>
-    
+</html>

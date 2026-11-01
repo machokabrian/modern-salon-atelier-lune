@@ -139,9 +139,9 @@ nav a:hover{color:var(--ink)}
 .person{background:var(--bg);border-radius:22px;padding:1.4rem}
 .person p{color:var(--muted);font-size:.93rem}
 .avatar{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font:600 1.5rem var(--serif);margin-bottom:1rem;background:var(--sage)}
-.person:nth-child(3) .avatar{background:var(--slate)}
-.person:nth-child(5) .avatar{background:var(--blush)}
-.person:nth-child(6) .avatar{background:var(--sand)}
+.person[data-cat="barber"] .avatar{background:var(--slate)}
+.person[data-cat="nails"] .avatar{background:var(--blush)}
+.person[data-cat="spa"] .avatar{background:var(--sand)}
 
 /* ---------- booking ---------- */
 #book{background:var(--accent);color:var(--accent-ink)}
@@ -176,5 +176,4 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   html{scroll-behavior:auto}
   .mini{animation:none}
   .btn,.house-card{transition:none}
-     }
-     
+}
